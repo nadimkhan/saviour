@@ -1,0 +1,28 @@
+<!DOCTYPE RCC><RCC version="1.0">
+    <qresource prefix="/translations">
+        <file alias="bg">locale/saviour_bg.qm</file>
+        <file alias="ca">locale/saviour_ca.qm</file>
+        <file alias="cs">locale/saviour_cs.qm</file>
+        <file alias="da">locale/saviour_da.qm</file>
+        <file alias="de">locale/saviour_de.qm</file>
+        <file alias="en">locale/saviour_en.qm</file>
+        <file alias="en_US">locale/saviour_en_US.qm</file>
+        <file alias="es">locale/saviour_es.qm</file>
+        <file alias="fi">locale/saviour_fi.qm</file>
+        <file alias="fr_FR">locale/saviour_fr_FR.qm</file>
+        <file alias="it">locale/saviour_it.qm</file>
+        <file alias="ja">locale/saviour_ja.qm</file>
+        <file alias="ko_KR">locale/saviour_ko_KR.qm</file>
+        <file alias="nl">locale/saviour_nl.qm</file>
+        <file alias="pl">locale/saviour_pl.qm</file>
+        <file alias="pt">locale/saviour_pt.qm</file>
+        <file alias="pt_BR">locale/saviour_pt_BR.qm</file>
+        <file alias="ro_RO">locale/saviour_ro_RO.qm</file>
+        <file alias="ru">locale/saviour_ru.qm</file>
+        <file alias="sk">locale/saviour_sk.qm</file>
+        <file alias="sv">locale/saviour_sv.qm</file>
+        <file alias="uk">locale/saviour_uk.qm</file>
+        <file alias="zh_CN">locale/saviour_zh_CN.qm</file>
+        <file alias="zh_TW">locale/saviour_zh_TW.qm</file>
+    </qresource>
+</RCC>

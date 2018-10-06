@@ -1,0 +1,12 @@
+[Desktop Entry]
+Encoding=UTF-8
+Name=Saviour
+Comment=Saviour P2P Cryptocurrency
+Comment[fr]=Saviour, monnaie virtuelle cryptographique pair à pair
+Comment[tr]=Saviour, eşten eşe kriptografik sanal para birimi
+Exec=saviour-qt %u
+Terminal=false
+Type=Application
+Icon=saviour128
+MimeType=x-scheme-handler/saviour;
+Categories=Office;Finance;
