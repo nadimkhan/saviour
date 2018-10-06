@@ -28,7 +28,7 @@ packages:
 - "python-setuptools"
 - "fonts-tuffy"
 remotes:
-- "url": "https://github.com/saviour-project/saviour.git"
+- "url": "https://github.com/nadimkhan/saviour.git"
   "dir": "saviour"
 files:
 - "MacOSX10.11.sdk.tar.gz"

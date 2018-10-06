@@ -24,10 +24,10 @@ If you're using the automated script (found in [contrib/gitian-build.sh](/contri
 Check out the source code in the following directory hierarchy.
 
     cd /path/to/your/toplevel/build
-    git clone https://github.com/saviour-project/gitian.sigs.git
-    git clone https://github.com/saviour-project/saviour-detached-sigs.git
+    git clone https://github.com/nadimkhan/gitian.sigs.git
+    git clone https://github.com/nadimkhan/saviour-detached-sigs.git
     git clone https://github.com/devrandom/gitian-builder.git
-    git clone https://github.com/saviour-project/saviour.git
+    git clone https://github.com/nadimkhan/saviour.git
 
 ### SAVIOUR maintainers/release engineers, suggestion for writing release notes
 

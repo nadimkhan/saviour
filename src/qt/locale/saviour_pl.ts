@@ -1225,9 +1225,9 @@ Proszę sprawdzić adres i spróbować ponownie</translation>
     </message>
     <message>
         <source>Language missing or translation incomplete? Help contributing translations here:
-https://www.transifex.com/saviour-project/saviour-project-translations</source>
+https://www.transifex.com/nadimkhan/nadimkhan-translations</source>
         <translation>Brakuje języka bądź nieukończona pełnego tłumaczenia? Pomóż w tłumaczeniu tutaj:
-https://www.transifex.com/saviour-project/saviour-project-translations </translation>
+https://www.transifex.com/nadimkhan/nadimkhan-translations </translation>
     </message>
     <message>
         <source>Connect to the SAVIOUR network through a SOCKS5 proxy.</source>

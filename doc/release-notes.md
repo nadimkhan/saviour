@@ -1,13 +1,13 @@
 PIVX Core version 2.3.1 is now available from:
 
-  <https://github.com/saviour-project/saviour/releases>
+  <https://github.com/nadimkhan/saviour/releases>
 
 This is a new minor version release, including various bug fixes and
 performance improvements, as well as updated translations.
 
 Please report bugs using the issue tracker at github:
 
-  <https://github.com/saviour-project/saviour/issues>
+  <https://github.com/nadimkhan/saviour/issues>
 
 Compatibility
 ==============
@@ -205,4 +205,4 @@ Thanks to everyone who directly contributed to this release:
 - Mrs-X
 - amirabrams
 
-As well as everyone that helped translating on [Transifex](https://www.transifex.com/projects/p/saviour-project-translations/).
+As well as everyone that helped translating on [Transifex](https://www.transifex.com/projects/p/nadimkhan-translations/).

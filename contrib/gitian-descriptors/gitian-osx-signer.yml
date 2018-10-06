@@ -7,7 +7,7 @@ architectures:
 packages:
 - "faketime"
 remotes:
-- "url": "https://github.com/saviour-project/saviour-detached-sigs.git"
+- "url": "https://github.com/nadimkhan/saviour-detached-sigs.git"
   "dir": "signature"
 files:
 - "saviour-osx-unsigned.tar.gz"
