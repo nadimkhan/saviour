@@ -2,7 +2,7 @@
 name: "saviour-osx-2.0"
 enable_cache: true
 suites:
-- "trusty"
+- "precise"
 architectures:
 - "amd64"
 packages: 
