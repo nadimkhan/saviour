@@ -481,7 +481,7 @@ clean-local:
 	@test -f $(WINDRES)
 	$(AM_V_GEN) $(WINDRES) -DWINDRES_PREPROC -i $< -o $@
 
-.mm.o:
+override .mm.o:
 	$(AM_V_CXX) $(OBJCXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) \
 	  $(CPPFLAGS) $(AM_CXXFLAGS) $(QT_INCLUDES) $(CXXFLAGS)  -c -o $@ $<
 
