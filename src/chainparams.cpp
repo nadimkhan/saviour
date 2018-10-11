@@ -137,8 +137,8 @@ public:
         genesis.nBits = 0x1e0ffff0;
         genesis.nNonce = 0x29372f;
         hashGenesisBlock = genesis.GetHash();
-        assert(hashGenesisBlock == uint256("0x"));
-        assert(genesis.hashMerkleRoot == uint256("0x"));
+        assert(hashGenesisBlock == uint256("0x01"));
+        assert(genesis.hashMerkleRoot == uint256("0x01"));
 
         vSeeds.push_back(CDNSSeedData("saviour.in", "seed.saviour.in"));     // Primary DNS Seeder
 
@@ -209,11 +209,38 @@ public:
         genesis.nTime = 1528527601;
         genesis.nNonce = 0x62e460;
         hashGenesisBlock = genesis.GetHash();
-        assert(hashGenesisBlock == uint256("0x000001ac620cfe7defe359601935a01ba8032e38dd30017eb3cc48dc9bcfbb27"));
+        assert(hashGenesisBlock == uint256("0x01"));
 
         vFixedSeeds.clear();
         vSeeds.clear();
         vSeeds.push_back(CDNSSeedData("saviour.in", "testnet.seed.saviour.in"));
+
+        // Genesis Block Code
+        if(genesis.GetHash() != uint256("0x")){
+              printf("MSearching for genesis block...\n");
+              uint256 hashTarget;
+              hashTarget.SetCompact(genesis.nBits);
+              while(uint256(genesis.GetHash()) > uint256(hashTarget))
+              {
+                  ++genesis.nNonce;
+                  if (genesis.nNonce == 0)
+                  {
+                      printf("Mainnet NONCE WRAPPED, incrementing time");
+                      std::cout << std::string("Mainnet NONCE WRAPPED, incrementing time:\n");
+                      ++genesis.nTime;
+                  }
+                  if (genesis.nNonce % 10000 == 0)
+                  {
+                      printf("Mainnet: nonce %08u: hash = %s \n", genesis.nNonce, genesis.GetHash().ToString().c_str());
+                  }
+              }
+              printf("Mainnet block.nTime = %u \n", genesis.nTime);
+              printf("Mainnet block.nNonce = %u \n", genesis.nNonce);
+              printf("Mainnet block.hashMerkleRoot: %s\n", genesis.hashMerkleRoot.ToString().c_str());
+              printf("Mainnet block.GetHash = %s\n", genesis.GetHash().ToString().c_str());
+        }
+
+        // Genesis
 
         base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1, 125); // Testnet saviour addresses start with 's'
         base58Prefixes[SCRIPT_ADDRESS] = std::vector<unsigned char>(1, 12);  // Testnet saviour script addresses start with '5' or '6'
@@ -277,7 +304,7 @@ public:
         genesis.nNonce = 0x3039;
 		hashGenesisBlock = genesis.GetHash();
         nDefaultPort = 21105;
-        assert(hashGenesisBlock == uint256("0x748ee1f3df8f7e01cf8e6f1fb1bebabd9083aa80503b7c8ea7d0929b987d6d9a"));
+        assert(hashGenesisBlock == uint256("0x01"));
 
         vFixedSeeds.clear(); //! Testnet mode doesn't have any fixed seeds.
         vSeeds.clear();      //! Testnet mode doesn't have any DNS seeds.
